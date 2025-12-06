@@ -1,0 +1,286 @@
+li {
+    color: inherit;
+}
+
+a {
+    color: initial;
+}
+
+.navbar {
+    padding: 30px 150px !important;
+    background-color: rgb(30, 32, 43) !important;
+}
+
+
+.logo {
+    margin: 0;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.logo a {
+    width: 30%;
+    padding-right: 5px !important;
+}
+
+.logo a img {
+    width: 100%;
+    height: 90%;
+}
+
+.logo div p {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 11px;
+}
+
+.logo div h6 {
+    padding: 0 0 5px 0 !important;
+    margin: 0 !important;
+
+}
+
+li {
+    margin-inline: 15px !important;
+
+}
+
+li a {
+    border: 2px solid transparent !important;
+
+    color: white !important;
+    border-radius: 20px !important;
+
+    padding: 4px 15px !important;
+    font-size: 13px !important;
+}
+
+.navbar-collapse li a:hover,
+a.active {
+    border: 2px solid rgb(0, 136, 255) !important;
+    color: rgb(0, 136, 255) !important;
+
+}
+
+section.home {
+    background-color: rgb(30, 32, 43);
+    min-height: 100vh;
+    position: relative;
+}
+
+
+div.backGround {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    min-height: 45vh;
+    position: relative;
+
+}
+
+section.home input.search {
+    background-color: rgb(30, 32, 43);
+    border: 0;
+    border-radius: 30px;
+    color: gray;
+    box-shadow: none;
+}
+
+section.home button.find {
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 30px;
+    position: absolute;
+    top: 102px;
+    right: 150px;
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+
+section.home .content {
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 15px;
+    background-color: rgb(50, 53, 68);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+section.home .content .info .title {
+    background-color: rgb(45, 48, 61);
+    width: 100%;
+
+
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+}
+
+section.home .content .middle {
+    background-color: rgb(38, 41, 54);
+    height: 100%;
+}
+
+section.home .content .middle .title {
+    background-color: rgb(34, 37, 48);
+}
+
+
+section.subscribe {
+    background-color: rgb(38, 41, 54);
+}
+
+section.subscribe .row {
+    position: relative;
+}
+
+section.subscribe input {
+    background-color: rgb(30, 32, 43);
+    border: 0;
+    border-radius: 30px;
+    color: gray;
+    box-shadow: none;
+    width: 85%;
+    padding-block: 1.6% !important;
+}
+
+section.subscribe button {
+    padding: 11px 30px;
+    border: 0;
+    border-radius: 30px;
+    position: absolute;
+    top: 8%;
+    right: 37.3%;
+    background-color: rgb(0, 154, 216);
+    color: white;
+}
+@media screen and (max-width: 768px){
+    section.home {
+        height: 200vh;
+    }
+    section.subscribe button
+    {
+        padding: 5px 15px;
+        top: 3%;
+        right: 17.8%;
+    }
+
+}
+
+section.subscribe i {
+    font-size: 25px;
+    background-color: rgb(30, 32, 43);
+    padding: 7px;
+    border-radius: 25px;
+    color: rgb(0, 154, 216);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.subscribe i.facebook {
+    font-size: 23px;
+    padding: 8px 12px;
+}
+
+section.subscribe i:hover {
+    color: white;
+    background-color: rgb(0, 154, 216);
+}
+
+section.subscribe p {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+section.contact {
+    background-color: rgb(30, 32, 43);
+    overflow: hidden;
+}
+section.contact p.description
+{
+    color: rgba(245, 245, 245, 0.679) !important;
+    font-size: 15px;
+}
+
+section.contact input {
+    background-color: transparent;
+    padding-block: 15px;
+    border: 2px gray solid;
+    border-radius: 30px;
+    box-shadow: none !important;
+
+}
+
+section.contact textarea {
+    background-color: transparent;
+    border: 2px gray solid;
+    border-radius: 25px;
+    padding-bottom: 70PX;
+    box-shadow: none !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: gray !important;
+}
+
+section.contact input:hover,
+section.contact input:focus {
+    border-color: aqua;
+    background-color: transparent;
+}
+section.contact textarea:hover,
+section.contact textarea:focus {
+    border-color: aqua;
+    background-color: transparent;
+}
+
+section.contact button {
+    border-radius: 25PX;
+    padding: 5PX 15PX;
+}
+
+section.contact .title
+{
+    background-color: rgb(38, 41, 54);
+    padding-block: 5px;
+    border-radius: 30px;
+    width: 90%;
+    margin-inline: auto !important;
+}
+section.contact .map
+{
+    height: 220px;
+}
+section.contact .details
+{
+    background-color: rgb(38, 41, 54);
+    height: 100% !important;
+    border-radius: 20px;
+}
+
+ .clock-box {
+  max-width: 320px;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.clock-box:hover {
+  transform: scale(1.05);
+}
+
+.clock-box .date {
+  letter-spacing: 1px;
+}
+
+.clock-box .time {
+  letter-spacing: 2px;
+}
+.clock-box {
+  background-color:transparent !important; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+#clock-container {
+    background-color: rgb(30, 32, 43);
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+<link rel="icon" href="./weather.ico" />
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+
+  <nav class="navbar navbar-expand-lg  fw-semibold bg-dark pt-2 pb-2 mynav  start-0 end-0 z-1">
+    <div class="container px-5 py-4">
+
+      <div class="logo d-flex flex-wrap justify-content-start pt-3   ">
+        <a class="navbar-brand   fs-3 logo d-flex flex-wrap justify-content-start  " href="#"><img class=""
+            src="./images/logo@2x.png" alt=""></a>
+            
+        <div class="content text-white ">
+          <h6 class=" h5">weather</h6>
+          <p class=" lead ">tagline goes here</p>
+        </div>
+      </div>
+               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+         </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase ">
+
+          <li class="nav-item active ">
+            <a class="nav-link active " href="">home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="">News</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="">Live camers</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="">Photos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="./contact.html">contacts</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- clock section -->
+
+<div id="clock-container" class="d-flex justify-content-center align-items-center text-center ">
+  <div class="clock-box border border-dark rounded p-4 bg-white shadow-lg">
+    <div id="date" class="date fs-5 fw-semibold text-secondary mb-2"></div>
+    <div id="clock" class="time display-4 fw-bold text-primary"></div>
+  </div>
+</div>
+
+
+  <!--home section -->
+  <section class="home">
+    <div class=" px-5 pt-5 backGround">
+      <div class="px-5 mx-5 pt-5">
+        <input type="search" class="form-control py-3  search" name="search" id="search" aria-describedby="helpId"
+          placeholder="Find your lication..." />
+        <button class=" btn-info find" id="find">Find</button>
+      </div>
+
+    </div>
+    <div class="content text-white row g-0">
+      <div class="col-md-4">
+        <div class="info ">
+          <div class="day d-flex flex-wrap justify-content-between  pt-2  title ">
+            <p id="today" class="ps-2">Monday</p>
+            <p class="pe-2">30jine</p>
+          </div>
+          <div class="ps-3">
+            <p class="pt-4">cairo</p>
+            <h6 id="deg" class="display-1 fw-bold">27.2oC</h6>
+            <img class="pt-2 w-25" id="image" src="./images/113.png" alt="">
+            <p class="text-info">clear</p>
+            <div class="d-flex flex-wrap justify-content-start">
+              <div class="d-flex flex-wrap justify-content-start">
+                <img class="w-25 h-75 pe-2 " src="./images/icon-umberella@2x.png" alt="">
+                <p>20%</p>
+              </div>
+              <div class="d-flex flex-wrap justify-content-start">
+                <img class="w-25 h-75 pe-2 " src="./images/icon-wind@2x.png" alt="">
+                <p>18km/h</p>
+              </div>
+              <div class="d-flex flex-wrap justify-content-start">
+                <img class="w-25 h-75 pe-2 " src="./images/icon-compass@2x.png" alt="">
+                <p>East</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info middle">
+          <div class="text-center  pt-2 title">
+            <p id="second" class="pb-3">Tuesday</p>
+          </div>
+          <div class="text-center">
+            <img id="secondImage" class="py-4 " src="" alt="">
+            <p class="py-0 my-0 h3">38.7oC</p>
+            <p id="secondTemp" class="py-0 my-0">27.1o</p>
+            <p class="pt-3 text-info">sunny</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info">
+          <div class="text-center px-2 pt-2 title">
+            <p id="third" class="pb-3">wednesday</p>
+          </div>
+          <div class="text-center">
+            <img id="thirdImage" class="py-4" src="" alt="">
+            <p class="py-0 my-0 h3">38.3oC</p>
+            <p id="thirdTemp" class="py-0 my-0">25.2o</p>
+            <p class="pt-3 text-info">sunny</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="subscribe px-5 py-5">
+    <div class="container mx-5 px-5">
+      <div class="row">
+      <div class="col-md-9">
+        <div>
+          <input type="search" class="form-control py-3  search" name="search" id="search" aria-describedby="helpId"
+            placeholder="Find your lication..." />
+          <button class=" btn-info find">Subscribe</button>
+        </div>
+
+      </div>
+      <div class="col-md-3">
+        <i class="fa-brands fa-facebook-f  facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+    </div>
+    <div>
+      <p class="text-white pt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
